@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
 import './App.css';
+import Child from './components/Child';
+import ChildTwo from './components/ChildTwo';
 
 function App() {
+  console.log('App rendered!');
+  const [renderCount, setRenderCount] = useState(1);
+
+  const handleClick = () => setRenderCount(renderCount + 1);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>App</h1>
+      <p>Number of renders: {renderCount}</p>
+      <button onClick={handleClick}>Rerender App</button>
+      <div className="children">
+        <Child renderCount={renderCount} />
+        <ChildTwo renderCount={renderCount} />
+      </div>
     </div>
   );
 }
