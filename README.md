@@ -51,7 +51,7 @@ Notice that this application has the following component tree:
 
 ```
 1. For each component, identify its parent (if any) and direct children (if any).
-1. Open the developer tools console and refresh the page. Which components log `[component] renderd!` to the console? Is it what you expected?
+1. Open the developer tools console and refresh the page. Which components log `[component] rendered!` to the console? Is it what you expected?
 1. Click the button to re-render the `App` component. Which component render counts changed? Which stayed the same?
 1. Click the buttons to re-render the other components. Before you click, predict how the re-render counts will change. Were you correct?
 
