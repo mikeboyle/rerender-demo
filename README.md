@@ -2,6 +2,14 @@
 
 This simple React app visualizes how and why components in a React component tree will re-render (or will not).
 
+The site is available online here: https://super-mermaid-52df4a.netlify.app/
+
+You can clone and run this repo locally:
+1. Clone the repo to your computer
+1. `npm install`
+1. `npm start`
+1. Site should open at `localhost:3000` on your browser.
+
 ## What is rendering? What is re-rendering?
 
 A React component will always render at least once, when it is "mounted" to the DOM.
